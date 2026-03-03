@@ -12,6 +12,11 @@ public class Rotate : MonoBehaviour
         
     }
 
+    public void ChangeSpeed(float speed)
+    {
+        angularSpeed = speed;
+    }
+
     // Update is called once per frame
     void Update()
     {
