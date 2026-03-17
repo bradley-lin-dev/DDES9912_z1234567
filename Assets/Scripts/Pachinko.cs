@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class Pachinko : MonoBehaviour
-{
+public class Pachinko : MonoBehaviour {
     [SerializeField]
     GameObject ballReservoirParent;
 
@@ -16,15 +15,17 @@ public class Pachinko : MonoBehaviour
     [SerializeField]
     BallLauncherSelector ballLauncherSelector;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    void Start() {
         m_balls = ballReservoirParent.GetComponentsInChildren<Rigidbody>(false);
     }
 
     // Update is called once per frame
-    public void LaunchBall()
-    {
-        ballLauncherSelector.selectedBall.GetComponent<Rigidbody>().position = launchTransform.position;
-        ballLauncherSelector.selectedBall.GetComponent<Rigidbody>().linearVelocity = Vector3.up * launchSpeed;
+    public void LaunchBall() {
+        if (ballLauncherSelector.selectedBall != null) {
+            ballLauncherSelector.selectedBall.GetComponent<Rigidbody>().MovePosition(launchTransform.position);
+            ballLauncherSelector.selectedBall.GetComponent<Rigidbody>().linearVelocity = Vector3.up * launchSpeed;
+            ballLauncherSelector.selectedBall = null;
+            Physics.SyncTransforms();
+        }
     }
 }
