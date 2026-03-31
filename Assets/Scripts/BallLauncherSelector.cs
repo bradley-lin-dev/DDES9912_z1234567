@@ -20,7 +20,7 @@ public class BallLauncherSelector : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("testL " + other.name + ". " + ballLayer.value + ", " + other.gameObject.layer);
+        //Debug.Log("testL " + other.name + ". " + ballLayer.value + ", " + other.gameObject.layer);
         if ((ballLayer.value & (1 << other.gameObject.layer)) != 0u)
         {
             selectedBall = other.gameObject;
