@@ -69,12 +69,13 @@ public class KeyboardMap : MonoBehaviour
         }
     }
 
+    [ContextMenu("Assign Children to Keys Array")]
     void PutChildTransforms()
     {
-        keys = new Transform[transform.childCount];
-        for (int i = 0; i < transform.childCount; i++)
+        keys = new Transform[transform.childCount - 1];
+        for (int i = 1; i < transform.childCount; i++)
         {
-            keys[i] = transform.GetChild(i);
+            keys[i-1] = transform.GetChild(i);
         }
 
     }

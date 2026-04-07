@@ -413,67 +413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   filterString: $2
---- !u!1001 &657270435
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 944986883048354261, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: onPrimaryInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: https://youtu.be/LTPzRiYah6E
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.165
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462548, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8990616506083462551, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
-      propertyPath: m_Name
-      value: EZPZ Button Interactable - Open URL Variant
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 21007548895049f42b0d22ee46fcf106, type: 3}
 --- !u!1001 &679906562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2416,6 +2355,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 417966011497825812, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+      propertyPath: m_text
+      value: LET'S GO GAMBLING
+      objectReference: {fileID: 0}
     - target: {fileID: 545273292772651381, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
       propertyPath: onEnoughToBuy.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2464,13 +2407,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2211488763773404611, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+      propertyPath: m_text
+      value: $2 - Slot Roll
+      objectReference: {fileID: 0}
     - target: {fileID: 3729943989884614665, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
       propertyPath: m_Name
       value: Vending Machine Paywalled
       objectReference: {fileID: 0}
+    - target: {fileID: 6334271480183340419, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ab886a9d9c1dacb418df0200d6044f69, type: 2}
     m_RemovedComponents:
     - {fileID: 6062469287770578904, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 418054347182976685, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+    - {fileID: 7274733673737025936, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+    - {fileID: 462740337073059641, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+    - {fileID: 9043132244341571019, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+    - {fileID: 4985315926624905395, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+    - {fileID: 1392477694557148260, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+    - {fileID: 2398514515001179785, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+    - {fileID: 9139837103127378681, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
+    - {fileID: 1858281180884110716, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1761042284338766938, guid: 535199ee128b6a04eb869e0586a11541, type: 3}
@@ -2491,7 +2451,6 @@ SceneRoots:
   - {fileID: 3457217213512515936}
   - {fileID: 7457159945624359001}
   - {fileID: 1235920152}
-  - {fileID: 657270435}
   - {fileID: 7787241035004070798}
   - {fileID: 2101778821}
   - {fileID: 721034757}
