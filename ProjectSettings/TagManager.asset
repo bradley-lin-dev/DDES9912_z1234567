@@ -18,8 +18,8 @@ TagManager:
   - Ignore Player Collision
   - Moving Platforms
   - Ball
-  - 
-  - 
+  - Holdable
+  - Ignore Holdable
   - 
   - 
   - 
