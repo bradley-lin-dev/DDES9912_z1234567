@@ -1171,6 +1171,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2390944922120210602, guid: 1ed538389130aad4babad24d560cfe62, type: 3}
   m_PrefabInstance: {fileID: 152007053}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &220155488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 220155489}
+  - component: {fileID: 220155492}
+  - component: {fileID: 220155491}
+  - component: {fileID: 220155490}
+  m_Layer: 0
+  m_Name: Quad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &220155489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220155488}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.33, y: 21.28, z: -3.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 786701143}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &220155490
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220155488}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &220155491
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220155488}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &220155492
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220155488}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &241045472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1932476406339415611, guid: 5b0e7bdf0192efa46ad5ecbe9d620a1d, type: 3}
@@ -7427,6 +7540,7 @@ Transform:
   - {fileID: 544706767}
   - {fileID: 1519244878}
   - {fileID: 2084355717}
+  - {fileID: 220155489}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &827278276 stripped
@@ -14429,8 +14543,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2, y: 0.3, z: 0.01}
-  m_Center: {x: 0, y: 0.1, z: 0}
+  m_Size: {x: 2, y: 0.5, z: 0.01}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!114 &1892674181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14796,7 +14910,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
+    - target: {fileID: 6477843204891330219, guid: df63664dbdd376b4298726771ab129fa, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
     - target: {fileID: 6936662284669754041, guid: df63664dbdd376b4298726771ab129fa, type: 3}
       propertyPath: m_Dithering
       value: 1
@@ -14804,15 +14921,10 @@ PrefabInstance:
     - target: {fileID: 6936662284669754041, guid: df63664dbdd376b4298726771ab129fa, type: 3}
       propertyPath: m_Antialiasing
       value: 2
-=======
-    - target: {fileID: 6477843204891330219, guid: df63664dbdd376b4298726771ab129fa, type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 4096
       objectReference: {fileID: 0}
     - target: {fileID: 7518067788661200365, guid: df63664dbdd376b4298726771ab129fa, type: 3}
       propertyPath: pushLayers.m_Bits
       value: 12289
->>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15015,6 +15127,7 @@ GameObject:
   - component: {fileID: 2084355717}
   - component: {fileID: 2084355716}
   - component: {fileID: 2084355715}
+  - component: {fileID: 2084355718}
   m_Layer: 0
   m_Name: Terrain_(-100.00, 0.00, -100.00)
   m_TagString: Untagged
@@ -15097,6 +15210,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 786701143}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2084355718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084355714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beeb237f2902161418e2d602a0c21a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  targetMesh: {fileID: 220155491}
+  followTransform: {fileID: 2002995395}
+  editableTerrainData: {fileID: 15600000, guid: fdded4c1dc608d74e941badc6fd41dc2, type: 2}
+  ploughDepth: 0.2
 --- !u!1001 &2104532472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15234,10 +15363,6 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 151051189}
-    - target: {fileID: 1583279466151781914, guid: bce953e7c79c1e04a9ef1947fd66bff1, type: 3}
-      propertyPath: m_Spring.spring
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7743999550131831628, guid: bce953e7c79c1e04a9ef1947fd66bff1, type: 3}
       propertyPath: m_Name
       value: Base Paper Strip
@@ -15320,10 +15445,7 @@ SceneRoots:
   - {fileID: 1992621958}
   - {fileID: 1870546414}
   - {fileID: 259806640}
-<<<<<<< Updated upstream
   - {fileID: 1524628207}
   - {fileID: 537881089}
-=======
   - {fileID: 1039681322}
   - {fileID: 1892674182}
->>>>>>> Stashed changes
