@@ -41,15 +41,15 @@ public class TerrainDebugReveal : MonoBehaviour
 
         float[,,] map = new float[1, 1, 3] { { { 0, 0, 1 } } };
         float[,] heightUnit = new float[1, 1] { { (m_existingTerrainData.GetHeight(
-            Mathf.RoundToInt(m_terrain.terrainData.heightmapResolution * xNormalizedPosition),
-            Mathf.RoundToInt(m_terrain.terrainData.heightmapResolution * yNormalizedPosition)) - ploughDepth) / m_existingTerrainData.size.y } };
+            Mathf.FloorToInt(m_terrain.terrainData.heightmapResolution * xNormalizedPosition),
+            Mathf.FloorToInt(m_terrain.terrainData.heightmapResolution * yNormalizedPosition)) - ploughDepth) / m_existingTerrainData.size.y } };
         m_terrain.terrainData.SetHeights(
-            Mathf.RoundToInt(m_terrain.terrainData.heightmapResolution * xNormalizedPosition),
-            Mathf.RoundToInt(m_terrain.terrainData.heightmapResolution * yNormalizedPosition),
+            Mathf.FloorToInt(m_terrain.terrainData.heightmapResolution * xNormalizedPosition),
+            Mathf.FloorToInt(m_terrain.terrainData.heightmapResolution * yNormalizedPosition),
             heightUnit);
         m_terrain.terrainData.SetAlphamaps(
-        Mathf.RoundToInt(m_terrain.terrainData.alphamapWidth * xNormalizedPosition),
-        Mathf.RoundToInt(m_terrain.terrainData.alphamapHeight * yNormalizedPosition),
+        Mathf.FloorToInt(m_terrain.terrainData.alphamapWidth * xNormalizedPosition),
+        Mathf.FloorToInt(m_terrain.terrainData.alphamapHeight * yNormalizedPosition),
         map);
         m_terrain.Flush();
     }
